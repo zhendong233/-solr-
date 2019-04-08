@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <!-- App Favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App title -->
+        <title>Uplon - Responsive Admin Dashboard Template</title>
+
+        <!-- Switchery css -->
+        <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
+
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- App CSS -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Modernizr js -->
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+    </head>
+
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+
+                    <!-- LOGO -->
+                    <div class="topbar-left">
+                        <a href="test.html" class="logo">
+                            <i class="zmdi zmdi-group-work icon-c-logo"></i>
+                            <span>Luxor</span>
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras navbar-topbar">
+
+                        <ul class="list-inline float-right mb-0">
+
+                            <li class="list-inline-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+                        </ul>
+
+                    </div> <!-- end menu-extras -->
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+
+           
+        </header>
+        <!-- End Navigation Bar-->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="wrapper">
+            <div class="container">
+
+                <!-- Page-Title -->
+              
+                <!-- end row -->
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-box">
+                            <div class="row">
+                                <div class="col-6">
+                                        <span><h4 class="hh">総合検索</h4><h5 class="hh" id="xiangxi"><a class="pull-right" href="javascript:;" onclick="primarysearch()">詳細</a></h5></span>
+                                        <div class="form-group has-success">
+                                            
+                                            <input type="text" class="form-control form-control-success form-control-xxx"
+                                                    id="inputSuccess1"/>
+                                        </div>
+
+                                        <div>
+                                                <h5 style="float:left">プロダクト：</h5>
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="checkbox4" type="checkbox" value=1 name="check">
+                                                    <label for="checkbox4">
+                                                        Insuite
+                                                    </label>
+                                                    <input id="checkbox5" type="checkbox" value=2 name="check">
+                                                    <label for="checkbox5">
+                                                        Sm@rtDB
+                                                    </label>
+                                                    <input id="checkbox6" type="checkbox" value=3 name="check">
+                                                    <label for="checkbox6">
+                                                        Luxor
+                                                    </label>
+                                                </div>
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <h5 style="float:left">リソース：</h5>
+                                            <div class="checkbox checkbox-primary">
+                                                <input id="checkbox1" type="checkbox" value=6 name="check">
+                                                <label for="checkbox1">
+                                                    github
+                                                </label>
+                                                <input id="checkbox2" type="checkbox" value=7 name="check">
+                                                <label for="checkbox2">
+                                                    Supportsite
+                                                </label>
+                                                <input id="checkbox3" type="checkbox" value=8 name="check">
+                                                <label for="checkbox3">
+                                                    問い合わせ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div id="gaojisousuo">
+
+                                        </div>
+                                </div>
+                            </div>
+                            <button type='button'  class="btn btn-primary waves-effect waves-light" onclick="search1(0,0)" >
+                                検索</button>
+                            <hr>
+                            <h6 id="zongji"></h6>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12" id="show1">
+                                   
+
+
+
+                                </div>
+                                <nav>
+
+                                    <ul class="pagination pagination-split" id="pageshow">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                            <!-- end row -->
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+
+            </div> <!-- container -->
+
+
+            <!-- Footer -->
+            <footer class="footer">
+                2019 by intern form-group @Luxor.
+            </footer>
+            <!-- End Footer -->
+
+
+
+            
+
+
+
+        </div> <!-- End wrapper -->
+
+
+
+
+        <script type="text/javascript">
+        //全局变量：服务器路径url
+        var url1='http://dacintern.m.diol.jp:8983/solr/new_core/select?';
+        var url2='&wt=json&hl=true&hl=true&hl.fl=content,publishTitle&hl.snippets=5&hl.fragsize=50&hl.simple.pre=<hi>&hl.simple.post=</hi>&sort=score desc';
+        //全局变量：记录当前输入框内的内容
+        var inputwenben;
+        //全局变量：记录每次返回来的json数据
+        var totaljson;
+        //全局变量：后端返回的总条数
+        var total=0;
+        //
+        var mill;
+        //计算出总页数，默认每页10条数据
+        //全局变量:总页数
+        function jisuan(total)
+        {
+            var pagenum=0;
+            if(Number(total%10)==0)
+            {
+                pagenum=total/10;
+                return pagenum;
+            }
+            else
+            {
+                pagenum=Math.floor(total/10)+1;
+                return pagenum;
+            }
+        }
+        //获取复选框当中的值
+        function huoqu()
+        {
+            var flag=0;
+            var flag2=0;
+            var guding='';
+            var ss='AND product:('
+            var rr='AND source:('
+            var r=''
+            var s =''
+            if($("#checkbox4").prop("checked"))
+            {
+                s+=' '+$("#checkbox4").val()
+                flag=1;
+            }
+            if($("#checkbox5").prop("checked"))
+            {
+                s+=' '+$("#checkbox5").val()
+                flag=1;
+            }
+            if($("#checkbox6").prop("checked"))
+            {
+                s+=' '+$("#checkbox6").val()
+                flag=1;
+            }
+            if($("#checkbox1").prop("checked"))
+            {
+                r+=' '+$("#checkbox1").val()
+                flag2=1;
+            }
+            if($("#checkbox2").prop("checked"))
+            {
+                r+=' '+$("#checkbox2").val()
+                flag2=1;
+            }
+            if($("#checkbox3").prop("checked"))
+            {
+                r+=' '+$("#checkbox3").val()
+                flag2=1;
+            }
+            ss=ss+s+')'
+            rr=rr+r+')'
+            if(flag==0&&flag2==0)
+            {
+                console.log('当前旗帜为'+flag+flag2+'旗')
+                return guding;
+            }
+            else if(flag==1&&flag2==0)
+            {
+                console.log('当前旗帜为'+flag+flag2+'旗')
+                return ss;
+            }
+            else if(flag==0&&flag2==1)
+            {
+                console.log('当前旗帜为'+flag+flag2+'旗')
+                return rr;
+            }
+            else
+            {
+                console.log('当前旗帜为'+flag+flag2+'旗')
+                return ss+rr;
+            }
+        }
+        function zonhjiyeshu(total,pagenumber)
+        {
+            var zongji='总计'+total+'条数据共'+pagenumber+'页：'
+            $("#zongji").empty();
+            $("#zongji").append(zongji);
+        }
+        //全局定义一个当前页面的数据以便调用各种函数
+        var Currentpage=0;
+
+        $(function(){
+            $("#zongji").empty();
+            $("#pageshow").empty();
+            $("#checkbox2").prop("checked",true);
+            $("#checkbox1").prop("checked",true);
+            $("#checkbox3").prop("checked",true);
+            $("#checkbox4").prop("checked",true);
+            $("#checkbox5").prop("checked",true);
+            $("#checkbox6").prop("checked",true);
+            mill=new Date().getTime();
+        })
+
+        function gopage(curpage,pagenum)
+        {
+            //上一页与下一页的定义
+            var pagepre='<li class="page-item"><a class="page-link" href="javascript:;" aria-label="Previous" onclick="search1('+Number((curpage-1)*10)+','+Number(curpage-1)+')">'
+            +'<span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
+            var pagenext='<li class="page-item"><a class="page-link" href="javascript:;" aria-label="Next" onclick="search1('+Number((curpage+1)*10)+','+Number(curpage+1)+')">'
+            +'<span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>';
+            //直接渲染成五个分页组中的按钮，并给当前页面添加当前状态，使得用户可知当前处于哪一页
+            var pagecon='';
+            //如果只有一页
+            if(pagenum==0)
+            {
+                $("#pageshow").empty();
+                $("#show1").empty();
+            }
+            else if(pagenum==1)
+            {
+                pagecon+=' <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>'
+                $("#pageshow").empty();
+                $("#pageshow").append(pagecon);
+            }
+            else{
+            //当前用户停留在第一页
+            if(curpage==0)
+            {
+                for(var i=0;i<pagenum&&i<5;i++)
+                {
+                    if(i==curpage){
+                        pagecon+=' <li class="page-item active"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                    else
+                    {
+                        pagecon+=' <li class="page-item"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                }
+                var pagedata=pagecon+pagenext;
+                $("#pageshow").empty();
+                $("#pageshow").append(pagedata);
+            }
+            //当用户停留在最后一页
+            else if(Number(curpage+1)==pagenum)
+            {
+                //如果总页数不超过5页
+                var i
+                if(Number(pagenum-5)>=0)
+                {
+                    i=Number(pagenum-5)
+                }
+                else
+                {
+                    i=0;
+                }
+                for(i;i<pagenum;i++)
+                {
+                    if(i==curpage){
+                        pagecon+=' <li class="page-item active"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                    else
+                    {
+                        pagecon+=' <li class="page-item"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                }
+                var pagedata=pagepre+pagecon;
+                $("#pageshow").empty();
+                $("#pageshow").append(pagedata);
+            }
+            else if(curpage==1)
+            {
+                for(var i=Number(curpage-1);i<pagenum&&i<Number(curpage+3);i++)
+                {
+                    if(i==curpage){
+                        pagecon+=' <li class="page-item active"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                    else
+                    {
+                        pagecon+=' <li class="page-item"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                }
+                var pagedata=pagepre+pagecon+pagenext;
+                $("#pageshow").empty();
+                $("#pageshow").append(pagedata);
+            }
+            else
+            {
+                for(var i=Number(curpage-2);i<pagenum&&i<Number(curpage+3);i++)
+                {
+                    if(i==curpage){
+                        pagecon+=' <li class="page-item active"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                    else
+                    {
+                        pagecon+=' <li class="page-item"><a class="page-link" href="javascript:;" onclick="search1('+Number(i*10)+','+Number(i)+')">'+Number(i+1)+'</a></li>'
+                    }
+                }
+                var pagedata=pagepre+pagecon+pagenext;
+                $("#pageshow").empty();
+                $("#pageshow").append(pagedata);
+            }
+            }
+            
+
+
+        }
+        function primarysearch()
+        {
+            var xiangxi='<a class="pull-right" href="javascript:;" onclick="closeprimarysearch()">詳細を閉じる</a>';
+            $("#xiangxi").empty();
+            $("#xiangxi").append(xiangxi);
+            var shuru='<h5>包含以下全部关键词</h5><input type="text" class="form-control form-control-success form-control-xxx"'
+                        +'id="inputSuccess2"/><p class="text-muted" id="texthidden">显示包含A and B的内容</p>'
+                        +'<h5 >不包括以下关键词</h5><input type="text" class="form-control form-control-success form-control-xxx"'
+                        +'id="inputSuccess3"/><p class="text-muted" id="texthidden">显示包含A中除去B的内容</p>'
+            $("#gaojisousuo").empty();
+            $("#gaojisousuo").append(shuru);
+        }
+        function closeprimarysearch()
+        {
+            var close='<a class="pull-right" href="javascript:;" onclick="primarysearch()">詳細</a>'
+            $("#xiangxi").empty();
+            $("#xiangxi").append(close);
+            $("#gaojisousuo").empty();
+        }
+        function search1(dangqiannum,curp)
+        {
+
+            var inputwenben=$("#inputSuccess1").val();
+            var andwenben=$("#inputSuccess2").val();
+            var notwenben=$("#inputSuccess3").val();
+            var xuanze=huoqu();
+            console.log('选择到的内容是'+xuanze+'输入框')
+            if(andwenben!==undefined&&andwenben!='')
+            {andwenben=' AND '+andwenben;}
+            else
+            {
+                andwenben=''
+            }
+            if(notwenben!==undefined&&notwenben!='')
+            {notwenben=' NOT '+notwenben;}
+            else{
+                notwenben=''
+            }
+            var zuizhong=inputwenben+andwenben+notwenben;
+            //var fenyecanshu='&start=0&rows=10';
+            var realurl=url1+'q=(content:('+zuizhong+')OR publishTitle:('+zuizhong+'))'+xuanze+url2+'&start='+dangqiannum+'&rows=10'
+            console.log(realurl);
+            require(realurl,curp);
+            $("#inputSuccess1").val(zuizhong);
+            $("#inputSuccess2").val("");
+            $("#inputSuccess3").val("");
+        }
+        function require(realurl,curp){
+	    //var a=$("#inputSuccess1").val();
+	    //console.log(a);
+	    //var url=realurl;
+	    $.ajax({
+            type: 'get',
+            url: realurl,
+            dataType: "jsonp",
+            jsonp: "json.wrf",
+            async:false,
+            success: function (data) {
+                console.log(data);
+                //console.log(data.highlighting[0].publishTitle)
+                var datashow='';
+                var product='';
+                var source='';
+                for(var i=0;i<data.response.docs.length;++i)
+                {
+                    if(data.highlighting[data.response.docs[i].id].publishTitle!==undefined){
+                        datashow+='<h3><a href="'+data.response.docs[i].url+'#'+mill+'" target="_blank">'+data.highlighting[data.response.docs[i].id].publishTitle+'</a></h3>';
+                    }
+                    else
+                    {
+                        datashow+='<h3><a href="'+data.response.docs[i].url+'#'+mill+'" target="_blank">'+data.response.docs[i].publishTitle+'</a></h3>';        
+                    }
+                    if(data.highlighting[data.response.docs[i].id].content!==undefined){
+                        datashow+='<p class="text-muted" style="max-width:1000px max-height:500px" id="texthidden">'+data.highlighting[data.response.docs[i].id].content+'</p>';
+                    }
+                    else
+                    {
+                        datashow+='<p class="text-muted" style="max-width:1000px max-height:500px" id="texthidden">'+data.response.docs[i].content+'</p>';     
+                    }
+                    switch(data.response.docs[i].product)
+                    {
+                        case 1:product='insuite'
+                        break;
+                        case 2:product='sm@rtDB'
+                        break;
+                        case 3:product='Luxor'
+                        break;
+                    }
+                    switch(data.response.docs[i].source)
+                    {
+                        case 6:source='github'
+                        break;
+                        case 7:source='supportsite'
+                        break;
+                        case 8:source='問い合わせ'
+                        break;
+                    }
+                    if(data.response.docs[i].publishTime!==undefined)
+                    {
+                        var strs= new Array();
+                        strs=data.response.docs[i].publishTime.split("T");
+                        datashow+='<p class="text-muted" id="texthidden">产品:<span class="bl">'+product+'</span>，来源:<span class="bl">'+source+'</span>，时间:<span class="bl">'+strs[0]+'</span></p><br>'
+                    }
+                    else
+                    {
+                        datashow+='<p class="text-muted" id="texthidden">产品:<span class="bl">'+product+'</span>，来源:<span class="bl">'+source+'</span></p><br>'
+                    }
+                }
+                //console.log(datashow);
+                $("#show1").empty();
+                $("#show1").append(datashow);
+                total=data.response.numFound;
+                var pagenum=jisuan(total);
+                zonhjiyeshu(total,pagenum);
+                gopage(curp,pagenum)
+            },
+            error: function (e) {
+                console.log("发生错误");
+                console.log(e);
+            }
+        })
+    }   
+
+            
+        </script>
+        <style>
+            #texthidden{
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;}
+            hi{
+                color:red
+            }
+            .hh { display: inline; }
+            .bl{
+                color:royalblue;
+            }
+            body a:hover{color: blue;}
+            a:link{color: black;}
+            a:visited{color: blueviolet;}
+        </style>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Tether for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
+</html>
